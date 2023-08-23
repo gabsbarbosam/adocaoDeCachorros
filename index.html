@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <title>Adoção de Cachorros - Dog</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-paw"></i>
+                <span>Dog</span>
+            </div>
+            <ul>
+                <li><a href="#"><i class="fas fa-home"></i></a></li>
+                <li><a href="#"><i class="fas fa-pencil-alt"></i></a></li>
+                <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="formulario-adocao">
+        <h1>O que você procura?</h1>
+        <form action="#">
+            <label for="genero">Gênero Preferido:</label>
+            <select id="genero" name="genero">
+                <option value="femea">Fêmea</option>
+                <option value="macho">Macho</option>
+            </select>
+
+            <label for="idade">Idade Preferida:</label>
+            <select id="idade" name="idade">
+                <option value="filhote">Filhote</option>
+                <option value="adulto">Adulto</option>
+                <option value="idoso">Idoso</option>
+            </select>
+
+            <label for="porte">Porte Preferido:</label>
+            <select id="porte" name="porte">
+                <option value="filhote">Pequeno</option>
+                <option value="adulto">Médio</option>
+                <option value="idoso">Grande</option>
+            </select>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <section class="carrossel">
+        <div class="carrossel-item"><img src="imagem 1.jpeg" alt="Imagem 1"></div>
+        <div class="carrossel-item"><img src="imagem 2.png" alt="Imagem 2"></div>
+    </section>
+
+
+    <section class="dicas-adocao">
+            <h2>O que devo considerar antes de adotar um cachorro?</h2>
+                <p>Reflita sobre o seu estilo de vida.</p>
+                <p>Considere todos os gastos.</p>
+                <p>Identifique o porte do cãozinho.</p>
+                <p>Idade e comportamento.</p>
+                <p>Vá de coração aberto!</p>
+        </div>
+    </section>
+
+    <script>
+    $(document).ready(function(){
+        $('.carrossel').slick({
+            dots: true, 
+            autoplay: true, 
+            autoplaySpeed: 3000 
+        });
+    });
+</script>
+
+    <footer>
+        <div class="rede-social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="direitos-autorais">
+            <p>© DOGS - Todos os Direitos Reservados.</p>
+            <p><a href="#">Termos de Uso</a> e <a href="#">Privacidade</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+
